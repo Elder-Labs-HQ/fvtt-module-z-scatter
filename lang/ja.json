@@ -20,6 +20,10 @@
 				"name": "Collide Different Token Sizes",
 				"hint": "Tokens with different dimensions can collide and scatter together."
 			},
+			"samePositionOnly": {
+				"name": "同じ位置のコマのみ分散",
+				"hint": "左上の座標が完全に一致するコマのみ分散します。サイズが異なるコマを含めるかどうかは別の設定に従います。"
+			},
 			"scatter": {
 				"name": "分散",
 				"hint": "同じマスのコマをどれくらい散らばらせますか？"

@@ -16,3 +16,5 @@ In the setup screen, use the manifest URL https://raw.githubusercontent.com/eliz
 
 There is a new Token Control called "Size Snap" wich can be toggled by the DM.
 When activated, you can put multiple tokens of the same size in the same space in the grid, and the module will acomodate them in a ordenable manner.
+
+The **Same Position Only** setting limits scattering to tokens with identical x and y coordinates. It is off by default, so overlapping tokens continue to scatter as before. The **Collide Different Token Sizes** setting separately controls whether tokens of different dimensions can scatter together.

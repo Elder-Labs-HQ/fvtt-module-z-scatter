@@ -20,6 +20,10 @@
 				"name": "Collide Different Token Sizes",
 				"hint": "Tokens with different dimensions can collide and scatter together."
 			},
+			"samePositionOnly": {
+				"name": "Same Position Only",
+				"hint": "Scatter only tokens with exactly the same x and y coordinates. The different-size setting still applies."
+			},
 			"scatter": {
 				"name": "Scattering",
 				"hint": "How much the tokens will scatter around?"

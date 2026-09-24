@@ -49,6 +49,7 @@ function recalculateScene(scene: any) {
 		scene.dimensions.size,
 		getSetting('ignoreElevation'),
 		getSetting('collideDifferentSizes'),
+		getSetting('samePositionOnly'),
 	);
 	const nextOffsets = new Map<TokenDocument, Offset>();
 

@@ -55,6 +55,15 @@ const settings = {
 		default: true,
 		onChange: () => canvas.tokens!.placeables.forEach((t) => t.refresh()),
 	},
+	samePositionOnly: {
+		name: `${MODULE_ID}.settings.samePositionOnly.name`,
+		hint: `${MODULE_ID}.settings.samePositionOnly.hint`,
+		scope: 'world',
+		config: true,
+		type: Boolean,
+		default: false,
+		onChange: () => import('./snap.js').then(({ refreshAll }) => refreshAll()),
+	},
 	scatter: {
 		name: `${MODULE_ID}.settings.scatter.name`,
 		hint: `${MODULE_ID}.settings.scatter.hint`,

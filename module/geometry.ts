@@ -38,6 +38,7 @@ export function buildCollisionGroups(
 	gridSize: number,
 	ignoreElevation = false,
 	collideDifferentSizes = true,
+	samePositionOnly = false,
 ) {
 	const groups: TokenDocument[][] = [];
 	const visited = new Set<TokenDocument>();
@@ -51,7 +52,9 @@ export function buildCollisionGroups(
 		for (let j = i + 1; j < tokens.length; j++) {
 			if (!ignoreElevation && !sameElevation(tokens[i], tokens[j])) continue;
 			if (!collideDifferentSizes && !sameDimensions(tokens[i], tokens[j])) continue;
-			if (!tokensCollide(tokens[i], tokens[j], grid, gridSize)) continue;
+			if (samePositionOnly) {
+				if (tokens[i].x !== tokens[j].x || tokens[i].y !== tokens[j].y) continue;
+			} else if (!tokensCollide(tokens[i], tokens[j], grid, gridSize)) continue;
 
 			collisionMap.get(tokens[i])!.add(tokens[j]);
 			collisionMap.get(tokens[j])!.add(tokens[i]);
