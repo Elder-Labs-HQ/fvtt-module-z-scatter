@@ -2,7 +2,7 @@
 
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/elizeuangelo/fvtt-module-z-scatter)
 ![GitHub Releases](https://img.shields.io/github/downloads/elizeuangelo/fvtt-module-z-scatter/latest/z-scatter.zip)
-![GitHub All Releases](https://img.shields.io/github/downloads/elizeuangelo/fvtt-module-z-scatter/z-scatter.zip?label=downloads)
+![GitHub All Releases](https://img.shields.io/github/downloads/elizeuangelo/fvtt-module-z-scatter/z-scatter.zip)
 
 Automatically force snap tokens in the same square, for better token management in the grid.
 
